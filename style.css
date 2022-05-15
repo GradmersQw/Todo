@@ -1,0 +1,155 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--red: #971123;
+	--blue: #3c0cad;
+	--light: #EEE;
+    --purple: #2babb4;
+    --message: #2bb492;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--purple);
+	margin-bottom: 1rem;
+}
+
+.create-task {
+    display: flex;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#add {
+	color: var(--light);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--red), var(--blue));
+	cursor: pointer;
+	transition: 0.4s;
+    display: flex;
+};
+
+#message {
+    flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+    display: flex;
+
+};
+
+input , button {
+    appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#add:hover {
+	opacity: 0.8;
+}
+
+#add:active {
+	opacity: 0.6;
+}
+
+.card {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--purple);
+	margin-bottom: 1rem;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	word-break: normal;
+}
+
+.content {
+
+    color: var(--purple);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task_message {
+  color: var(--light);
+	font-size: 1.25rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.card__button-delete {
+    font-size: 13px;
+    color: var(--red);
+}
+
+.edit {
+    font-size: 13px;
+    color: var(--light);
+    background-image: linear-gradient(to right, var(--red), var(--blue));
+		white-space: nowrap;
+}
